@@ -13,7 +13,7 @@ class Contenedor {
             return JSON.parse(objs)
 
         } catch (error) {
-            return("Error, hiciste algo mal")
+            return("Error, por algun motivo no se muestra el array de productos")
         }        
     }
 
@@ -96,7 +96,7 @@ class Contenedor {
 }
 
 async function main(){
-    const contenedor = new Contenedor('./base.json')
+    const contenedor = new Contenedor('./dataBase.json')
     console.log (await contenedor.getAll())
 }
 

@@ -1,6 +1,6 @@
 const { request, response } = require("express");
 const express = require("express");
-const Contenedor = require('../2daEntrega/2daEntrega')
+const Contenedor = require('../2daEntrega/2doDesafio');
 const arrayDeProductos = new Contenedor();
 
 const app = express();
@@ -20,4 +20,4 @@ app.get("*", (req, res) => {
 
 const server = app.listen(8080, () => {
     console.log(`servidor http escuchando en http://localhost:8080/`)
-} )
+});
